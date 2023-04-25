@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "first_name": "rahul",
+      "last_name": "gupta",
+      "username": "rahulgupta",
+      "password": "123456789",
+      "user_id": "6c5ba3f7-9f4f-4d2c-9306-11001192d5e7"
+    }
+  ],
+  "posts": [],
+  "reactions": [],
+  "comments": []
+}
