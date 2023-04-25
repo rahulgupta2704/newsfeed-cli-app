@@ -33,13 +33,15 @@ async function signup() {
   newUserDetails.user_id = uuidv4();
 
   if (usersTable.some((row) => row.username === newUserDetails.username)) {
-    console.log('USERNAME ALREADY EXISTS');
+    console.log('\nUsername already exists!\n');
     return;
   }
 
   usersTable.push(newUserDetails);
 
   dbWrite(db);
+
+  console.log('\nSignup successful! Please login using the credentials\n');
 };
 
 export default signup;

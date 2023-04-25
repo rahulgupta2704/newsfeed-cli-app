@@ -8,7 +8,21 @@
       "user_id": "6c5ba3f7-9f4f-4d2c-9306-11001192d5e7"
     }
   ],
-  "posts": [],
-  "reactions": [],
+  "posts": [
+    {
+      "content": "test post 1",
+      "user_id": "6c5ba3f7-9f4f-4d2c-9306-11001192d5e7",
+      "timestamp": 1682456706216,
+      "post_id": "76c83667-19f7-48f2-9dd8-b799a8a16acc"
+    }
+  ],
+  "likes": [
+    {
+      "post_id": "76c83667-19f7-48f2-9dd8-b799a8a16acc",
+      "user_id": "6c5ba3f7-9f4f-4d2c-9306-11001192d5e7",
+      "timestamp": 1682458625943,
+      "like_id": "137311d6-20e5-44d9-bf73-14511a067c20"
+    }
+  ],
   "comments": []
 }

@@ -1,6 +1,8 @@
 import inquirer from "inquirer";
 import login from "./login.js";
 import signup from "./signup.js";
+import post from "./post.js";
+import like from "./like.js";
 
 function getChoice() {
     return inquirer.prompt([
@@ -23,11 +25,15 @@ function getChoice() {
 async function runApp() {
     let feature = (await getChoice()).feature;
     if(feature === 'login') {
-        await login()
+        await login();
     } else if (feature === 'signup') {
-        await signup()
+        await signup();
+    } else if (feature === 'post') {
+        await post();
+    } else if (feature === 'like') {
+        await like();
     } else {
-        console.log('FEATURE NOT AVAILABLE YET')
+        console.log('\nFEATURE NOT AVAILABLE YET\n')
     };
     runApp();
 };

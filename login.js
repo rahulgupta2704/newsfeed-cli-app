@@ -20,12 +20,12 @@ async function login() {
   let user = usersTable.find((row) => row.username === creadentials.username);
 
   if (!user) {
-    console.log('Incorrect username or passwrod!');
+    console.log('\nIncorrect username or passwrod!\n');
   } else if (user.password === creadentials.password) {
     process.env.userSession = user.user_id;
-    console.log('Logged in successfully!')
+    console.log('\nLogged in successfully!\n')
   } else {
-    console.log('Incorrect username or passwrod!');
+    console.log('\nIncorrect username or passwrod!\n');
   };
 }
 
